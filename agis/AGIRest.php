@@ -23,7 +23,7 @@ $codename = "No Found";
 $response = file_get_contents('https://jsonplaceholder.typicode.com/users/'.$code);
 $restdata = json_decode($response);
 
-// Set New Variable
+// Set New Variable 
 $agi->set_variable("RESTNAME", $restdata->name);
 $agi->set_variable("RESTEMAIL", $restdata->email);
 
